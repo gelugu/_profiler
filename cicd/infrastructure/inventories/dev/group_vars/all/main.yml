@@ -1,0 +1,14 @@
+---
+# regestry vars
+regestry_url     : registry.gitlab.com
+regestry_owner     : gelugu
+regestry_project_path : auto-react-compose
+regestry_project_name : auto-react-compose
+
+regestry_username: ansible-gitlab-regestry
+
+# conrainer vars
+image_name: frontend
+image_default_tag  : latest
+container_inside_port: 5000
+container_outside_port: 80

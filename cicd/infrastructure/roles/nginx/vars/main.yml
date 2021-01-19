@@ -1,0 +1,8 @@
+---
+worker_processes: auto
+worker_connections: 2048
+http_port: 80
+api_server: 178.154.249.92
+api_server_port: 5000
+site_location: /home/gelugu/nginx/html
+...

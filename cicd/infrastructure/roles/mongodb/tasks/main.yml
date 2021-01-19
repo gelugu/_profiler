@@ -1,0 +1,12 @@
+---
+
+- name: Start mongodb in container
+  docker_container:
+    name: "{{ mongo_container_name }}"
+    image: mongo:3.6.21-xenial
+    ports:
+      - "{{ mongo_expose_port }}:27017"
+    volumes:
+      - /"{{ mongo_local_volume }}:/data/db"
+
+...

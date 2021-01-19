@@ -1,0 +1,32 @@
+.pf-container {
+  margin: 2rem;
+}
+
+.pf-additional {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: inherit;
+
+  height: 35rem;
+
+  border: var(--light) solid 0.2rem;
+}
+
+.pf-add-focus:focus {
+  border-width: 0.1rem;
+}
+
+.pf-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pf-delete {
+  background-color: var(--light);
+  color: var(--dark);
+
+  padding: 0.5rem;
+  width: fit-content;
+
+  border: none;
+}

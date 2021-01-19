@@ -1,0 +1,78 @@
+.c-container {
+  margin: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.c-main {
+  display: flex;
+}
+
+.c-main-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+input.c-avatar {
+  background-color: inherit;
+
+  width: 10rem;
+  height: 10rem;
+
+  opacity: 0;
+}
+div.c-avatar {
+  margin-right: 1rem;
+  border: var(--grey) solid 0.1rem;
+}
+
+.c-input {
+  font-size: xx-large;
+  background-color: inherit;
+  border: none;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.c-name {
+}
+
+.c-nick {
+  font-size: x-large;
+}
+
+.c-birthdate-inputs {
+  display: flex;
+  flex-direction: row;
+}
+.c-birthdate {
+  background-color: inherit;
+  font-size: x-large;
+  max-width: fit-content;
+  border: none;
+}
+
+.c-additional {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: inherit;
+
+  height: 35rem;
+
+  border: var(--light) solid 0.2rem;
+}
+
+.c-additional:focus {
+  border-width: 0.1rem;
+}
+
+.c-submit {
+  background-color: var(--light);
+  color: var(--dark);
+
+  padding: 0.5rem;
+  width: fit-content;
+
+  border: none;
+}

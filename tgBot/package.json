@@ -1,0 +1,19 @@
+{
+  "name": "tgbot",
+  "version": "0.1.0",
+  "description": "Profiler telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,20 @@
+.pc-container {
+  margin: 2rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+
+  border: var(--light) solid 0.1rem;
+}
+
+.pc-container:hover {
+  background-color: var(--grey);
+}
+
+.pc-details {
+  padding: .1rem .5rem;
+  width: fit-content;
+}

@@ -1,0 +1,4 @@
+---
+mongo_expose_port: 27017
+mongo_local_volume: profiler-db-data
+mongo_container_name: mern-db

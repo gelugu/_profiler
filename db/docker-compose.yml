@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  profiler-db:
+    container_name: profiler-db
+    image: mongo:3.6.21-xenial
+    ports:
+      - 27017:27017
+    volumes:
+      - ./profiler-db-data:/data/db

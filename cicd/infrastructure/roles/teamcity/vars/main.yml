@@ -1,0 +1,5 @@
+---
+teamcity_container_name: teamcity-server
+teamcity_UI_port: 5482
+teamcity_local_data_volume: /teamcity/data_dir
+teamcity_local_log_volume: /teamcity/log_dir
