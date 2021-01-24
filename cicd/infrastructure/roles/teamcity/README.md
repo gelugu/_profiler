@@ -1,1 +1,0 @@
-Start teamcity server in container

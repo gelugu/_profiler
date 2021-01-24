@@ -1,9 +1,0 @@
----
-
-teamcity_agent_container_name: teamcity_node_agent
-teamcity_server_host: 178.154.249.92
-teamcity_server_port: 5482
-teamcity_agent_name: node_agent
-teamcity_agent_local_volume: /var/run/docker.sock
-
-...

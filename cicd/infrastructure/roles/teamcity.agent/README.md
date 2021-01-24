@@ -1,1 +1,0 @@
-Start teamcity agent in container
