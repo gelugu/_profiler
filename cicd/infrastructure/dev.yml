@@ -2,13 +2,13 @@
 - hosts: db
   become: yes
   roles:
-    - docker.install
-    - mongodb
+    # - docker.install
+#    - mongodb
 
 - hosts: server
   become: yes
   roles:
-    - mern.server
+    # - mern.server
 
 - hosts: client
   become: yes

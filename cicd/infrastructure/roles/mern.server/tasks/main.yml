@@ -14,8 +14,10 @@
 
 - name: Install NestJS
   npm:
-    name: "@nestjs/cli"
+    name: "{{ item }}"
     state: present
     global: yes
-
+  loop:
+    - "@nestjs/cli"
+    - "@nestjs/core"
 ...
