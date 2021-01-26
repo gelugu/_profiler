@@ -33,7 +33,7 @@ export const Create = () => {
         {
           ...form,
         },
-        { Authorization: `Bearer ${token}` },
+        { Authorization: `Bearer ${token}` }
       );
       history.push(`/person/${_id}`);
     } catch (error) {}
@@ -84,6 +84,7 @@ export const Create = () => {
             type="date"
             defaultValue={new Date().toISOString().substr(0, 10)}
             onChange={({ target }) => {
+              if (target.valueAsDate === null) return;
               setForm({
                 ...form,
                 birthday: target.valueAsDate.getTime(),
@@ -96,6 +97,10 @@ export const Create = () => {
       <textarea
         className="c-additional"
         value={form.additional}
+        onKeyDown={(e) => {
+          console.log(e.key);
+          if (e.ctrlKey && e.key === "Enter") pressHandler();
+        }}
         onChange={({ target }) => {
           setForm({ ...form, additional: target.value });
         }}
