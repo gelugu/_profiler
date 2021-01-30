@@ -1,11 +1,11 @@
 .pc-container {
-  margin: 2rem;
+  margin: 1rem 0 0 1rem;
   padding: 1rem;
 
   display: flex;
   flex-direction: column;
 
-  width: fit-content;
+  width: min-content;
 
   border: var(--light) solid 0.1rem;
 }

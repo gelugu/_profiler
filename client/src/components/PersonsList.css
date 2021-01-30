@@ -1,5 +1,12 @@
 .pl-container {
+  max-height: 100vh;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+@media(min-width: 767px) {
+  .pl-container {
+    max-height: min-content;
+  }
 }

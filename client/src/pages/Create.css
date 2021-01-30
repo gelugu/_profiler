@@ -17,8 +17,8 @@
 input.c-avatar {
   background-color: inherit;
 
-  width: 10rem;
-  height: 10rem;
+  max-width: 10rem;
+  max-height: 10rem;
 
   opacity: 0;
 }
@@ -58,6 +58,7 @@ div.c-avatar {
   padding: 0.5rem;
   background-color: inherit;
 
+  min-height: 10rem;
   height: 35rem;
 
   border: var(--light) solid 0.2rem;

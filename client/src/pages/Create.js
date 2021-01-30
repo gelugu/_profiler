@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import { useHttp } from "../hooks/http.hook";
 
-import "./Create.css";
+import "./../components/PersonFile.css";
 
 export const Create = () => {
   const history = useHistory();
@@ -12,7 +12,6 @@ export const Create = () => {
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
-    nickName: "",
     birthday: 0,
     additional: "",
   });
@@ -40,11 +39,11 @@ export const Create = () => {
   };
 
   return (
-    <div className="c-container">
-      <div className="c-main">
-        <div className="c-main-inputs">
+    <div className="pf-container">
+      <div className="pf-main">
+        <div className="pf-main-inputs">
           <input
-            className="c-input c-name"
+            className="pf-input pf-name"
             placeholder="first name"
             type="text"
             value={form.firstName}
@@ -56,7 +55,7 @@ export const Create = () => {
             }}
           />
           <input
-            className="c-input c-name"
+            className="pf-input pf-name"
             placeholder="last name"
             type="text"
             value={form.lastName}
@@ -68,19 +67,7 @@ export const Create = () => {
             }}
           />
           <input
-            className="c-input c-nick"
-            placeholder="nick name"
-            type="text"
-            value={form.nickName}
-            onChange={({ target }) => {
-              setForm({
-                ...form,
-                nickName: target.value,
-              });
-            }}
-          />
-          <input
-            className="c-input c-birthday"
+            className="pf-input pf-birthday"
             type="date"
             defaultValue={new Date().toISOString().substr(0, 10)}
             onChange={({ target }) => {
@@ -95,7 +82,7 @@ export const Create = () => {
         </div>
       </div>
       <textarea
-        className="c-additional"
+        className="pf-additional"
         value={form.additional}
         onKeyDown={(e) => {
           console.log(e.key);
@@ -106,7 +93,7 @@ export const Create = () => {
         }}
         placeholder="additional info..."
       />
-      <button className="c-submit" onClick={pressHandler}>
+      <button className="pf-submit" onClick={pressHandler}>
         Save
       </button>
     </div>

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
-import "./navbar.css";
+import "./Navbar.css";
 
 export const Navbar = () => {
   const history = useHistory();
@@ -15,15 +15,14 @@ export const Navbar = () => {
   };
 
   return (
-    <nav>
-      <div className="nav-container">
-        <h1><NavLink to="/" className="nav-logo">_Profiler</NavLink></h1>
+    <nav className="nav-container">
+        <NavLink to="/" className="nav-logo">_Profiler</NavLink>
         <ul className="nav-list">
           <li className="nav-el">
-            <NavLink to="/create">Create</NavLink>
+            <NavLink className="nav-link" to="/create">Create</NavLink>
           </li>
           <li className="nav-el">
-            <NavLink to="/profiles">Profiles</NavLink>
+            <NavLink className="nav-link" to="/profiles">Profiles</NavLink>
           </li>
           <li className="nav-el">
             <button className="nav-button" onClick={logoutHandler}>
@@ -31,7 +30,6 @@ export const Navbar = () => {
             </button>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };

@@ -47,11 +47,11 @@ export const PersonFile = ({ person }) => {
   }
 
   return (
-    <div className="c-container">
-      <div className="c-main">
-        <div className="c-main-inputs">
+    <div className="pf-container">
+      <div className="pf-main">
+        <div className="pf-main-inputs">
           <input
-            className="c-input c-name"
+            className="pf-input pf-name"
             placeholder="first name"
             type="text"
             readOnly={!isEdit}
@@ -64,7 +64,7 @@ export const PersonFile = ({ person }) => {
             }}
           />
           <input
-            className="c-input c-name"
+            className="pf-input pf-name"
             placeholder="last name"
             type="text"
             readOnly={!isEdit}
@@ -77,7 +77,7 @@ export const PersonFile = ({ person }) => {
             }}
           />
           <input
-            className="c-input c-nick"
+            className="pf-input pf-nick"
             placeholder="nick name"
             type="text"
             readOnly={!isEdit}
@@ -90,7 +90,7 @@ export const PersonFile = ({ person }) => {
             }}
           />
           <input
-            className="c-input c-birthday"
+            className="pf-input pf-birthday"
             type="date"
             defaultValue={new Date(form.birthday).toISOString().substr(0, 10)}
             readOnly={!isEdit}
@@ -114,7 +114,7 @@ export const PersonFile = ({ person }) => {
         placeholder="additional info..."
       />
       <div className="pf-buttons">
-      <button className="c-submit" onClick={pressHandler}>
+      <button className="pf-submit" onClick={pressHandler}>
         {isEdit ? "Save" : "Edit"}
       </button>
       <button className="pf-delete" onClick={deleteHandler}>

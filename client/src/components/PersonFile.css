@@ -1,5 +1,39 @@
 .pf-container {
-  margin: 2rem;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-main {
+  display: flex;
+}
+
+.pf-main-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-input {
+  font-size: medium;
+  background-color: inherit;
+  border: none;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.pf-name {
+}
+
+.pf-birthdate-inputs {
+  display: flex;
+  flex-direction: row;
+}
+.pf-birthdate {
+  background-color: inherit;
+  font-size: x-large;
+  max-width: fit-content;
+  border: none;
 }
 
 .pf-additional {
@@ -7,18 +41,30 @@
   padding: 0.5rem;
   background-color: inherit;
 
-  height: 35rem;
+  height: 100vh;
 
   border: var(--light) solid 0.2rem;
 }
 
-.pf-add-focus:focus {
+.pf-additional:focus {
   border-width: 0.1rem;
 }
 
 .pf-buttons {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.pf-submit {
+  background-color: var(--light);
+  color: var(--dark);
+
+  padding: 0.5rem;
+  width: fit-content;
+
+  border: none;
+  align-self: end;
 }
 
 .pf-delete {
@@ -29,4 +75,17 @@
   width: fit-content;
 
   border: none;
+}
+
+@media(min-width: 767px) {
+  .pf-container {
+    width: auto;
+  }
+  .pf-additional {
+    height: 60vh;
+    resize: vertical;
+  }
+  .pf-submit {
+    align-self: start;
+  }
 }

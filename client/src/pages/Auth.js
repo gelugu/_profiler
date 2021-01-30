@@ -47,7 +47,8 @@ export const Auth = () => {
         onFocus={() => {inputRef.current.placeholder = ""}}
         onBlur={() => {inputRef.current.placeholder = "_profiler"}}
         id="password"
-        type="password"
+        type="tel"
+        autoComplete="false"
         name="password"
         defaultValue=""
         value={password}
