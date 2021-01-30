@@ -13,7 +13,7 @@ export const Person = () => {
 
   const getPerson = useCallback(async () => {
     try {
-      const fetched = await request(`/persons/${personId}`, "GET", null, {
+      const fetched = await request(`/api/persons/${personId}`, "GET", null, {
         Authorization: `Bearer ${token}`,
       });
       setPerson(fetched);

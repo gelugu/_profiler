@@ -6,11 +6,6 @@ export const useAuth = () => {
   const [token, setToken] = useState(null);
   const { request } = useHttp();
 
-  // useEffect(() => {
-  //   if (!token)
-  //     request("/telegram/sendpassword");
-  // }, [request, token]);
-
   const storageName = "_profiler";
 
   const login = useCallback((jwtToken) => {

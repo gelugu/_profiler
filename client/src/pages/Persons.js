@@ -11,7 +11,7 @@ export const Persons = () => {
 
   const fetchLinks = useCallback(async () => {
     try {
-      const fetched = await request("/persons", "GET", null, {
+      const fetched = await request("/api/persons", "GET", null, {
         Authorization: `Bearer ${token}`,
       });
       setPersons(fetched);

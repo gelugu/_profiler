@@ -16,7 +16,7 @@ export const PersonFile = ({ person }) => {
     if (isEdit) {
       try {
         await request(
-          `/persons/${form._id}`,
+          `/api/persons/${form._id}`,
           "PUT",
           {
             ...form,
@@ -34,7 +34,7 @@ export const PersonFile = ({ person }) => {
   const deleteHandler = async () => {
     try {
       await request(
-        `/persons/${form._id}`,
+        `/api/persons/${form._id}`,
         "DELETE",
         {
           ...form,
@@ -73,19 +73,6 @@ export const PersonFile = ({ person }) => {
               setForm({
                 ...form,
                 lastName: target.value,
-              });
-            }}
-          />
-          <input
-            className="pf-input pf-nick"
-            placeholder="nick name"
-            type="text"
-            readOnly={!isEdit}
-            value={form.nickName}
-            onChange={({ target }) => {
-              setForm({
-                ...form,
-                nickName: target.value,
               });
             }}
           />

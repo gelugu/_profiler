@@ -27,7 +27,7 @@ export const Create = () => {
     }
     try {
       const { _id } = await request(
-        "/persons",
+        "/api/persons",
         "POST",
         {
           ...form,

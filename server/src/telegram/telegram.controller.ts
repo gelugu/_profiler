@@ -9,7 +9,7 @@ import {
 } from "@nestjs/common";
 import { TelegramService } from "./telegram.service";
 
-@Controller("telegram")
+@Controller("api/telegram")
 export class TelegramController {
   constructor(private readonly telegramService: TelegramService) {}
 

@@ -14,7 +14,7 @@ import { UpdatePersonDto } from "./dto/updatePerson.dto";
 import { PersonsService } from "./persons.service";
 import { Person } from "./schemas/person.schema";
 
-@Controller("persons")
+@Controller("api/persons")
 export class PersonsController {
   constructor(private readonly personService: PersonsService) {}
 

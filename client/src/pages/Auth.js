@@ -16,12 +16,12 @@ export const Auth = () => {
 
   useEffect(() => {
     if (!token)
-      request("/telegram/sendpassword");
+      request("/api/telegram/sendpassword");
   }, [request, token]);
 
   const loginHandler = useCallback( async () => {
     try {
-      const { token } = await request(`/auth/${password}`, "POST", {});
+      const { token } = await request(`/api/auth/${password}`, "POST", {});
       if (token) {
         login(token);
       }
